@@ -12,7 +12,7 @@ class MethodOverload
         System.out.println("Roll number is"+ roll_no);
     }  
 }
-public class MethodOverloadEx3
+public class NameVariable
 {
     public static void main(String[] args)
     {
