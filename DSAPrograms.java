@@ -152,17 +152,21 @@ public class DSAPrograms {
 
         System.out.println("Linear Search: " + linearSearch(arr, 9));
 
-        Arrays.sort(arr); // for binary search
-        System.out.println("Binary Search: " + binarySearch(arr, 3));
+        int[] sortedArr = arr.clone();
+        Arrays.sort(sortedArr); // for binary search
+        System.out.println("Binary Search: " + binarySearch(sortedArr, 3));
 
-        bubbleSort(arr);
-        System.out.println("Bubble Sorted: " + Arrays.toString(arr));
+        int[] bubbleArr = arr.clone();
+        bubbleSort(bubbleArr);
+        System.out.println("Bubble Sorted: " + Arrays.toString(bubbleArr));
 
-        selectionSort(arr);
-        System.out.println("Selection Sorted: " + Arrays.toString(arr));
+        int[] selectionArr = arr.clone();
+        selectionSort(selectionArr);
+        System.out.println("Selection Sorted: " + Arrays.toString(selectionArr));
 
-        insertionSort(arr);
-        System.out.println("Insertion Sorted: " + Arrays.toString(arr));
+        int[] insertionArr = arr.clone();
+        insertionSort(insertionArr);
+        System.out.println("Insertion Sorted: " + Arrays.toString(insertionArr));
 
         System.out.println("Factorial of 5: " + factorial(5));
         System.out.println("Fibonacci of 6: " + fibonacci(6));
